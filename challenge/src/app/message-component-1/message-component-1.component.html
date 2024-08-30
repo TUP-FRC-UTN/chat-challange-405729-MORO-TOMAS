@@ -1,0 +1,12 @@
+<div class="card">
+    <div class="card-header">
+        Usuario: {{userName}}
+    </div>
+    <div class="card-body">
+        <div class="m-3">
+            <label for="message" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="message" rows="3" [(ngModel)]="message"></textarea>
+            <button type="submit" (click)="sendMessage()" class="btn btn-primary m-3">Guardar</button>
+          </div>
+    </div>
+  </div>
